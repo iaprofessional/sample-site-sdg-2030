@@ -1,11 +1,11 @@
 //theme.js chooses a random number and then gives a theme. If the number is 0 then the default background will remain.//
-var number = Math.floor(Math.random() * 11);
+var number = Math.floor(Math.random() * 10);
 console.log(number)
 setTimeout(theme, 500) //Yes this is needed in order to prevent the browser from throwing an error in the devtools console//
 function theme() {
 if (number == 1) {
 document.getElementById("themeinject").style.background = "blue"
-document.getElementById("themeinject").style.color = "black"
+document.getElementById("themeinject").style.color = "white"
 } else if (number == 2) {
 document.getElementById("themeinject").style.background = "green"
 document.getElementById("themeinject").style.color = "pink"    
@@ -31,9 +31,6 @@ document.getElementById("themeinject").style.background = "brown"
 document.getElementById("themeinject").style.color = "skyblue"      
 } else if (number == 9) {
 document.getElementById("themeinject").style.background = "pink"    
-} else if (number == 10) {
-document.getElementById("themeinject").style.background = "red" 
-document.getElementById("themeinject").style.color = "skyblue"      
 }
 if(number == 0) {
     document.getElementById("themeinject").style.background = "orange"
