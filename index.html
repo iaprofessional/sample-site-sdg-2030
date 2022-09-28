@@ -6,14 +6,55 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="style.css"></link>
+        <script src="main.js"></script>
         <script src="theme.js"></script>
     </head>
     <body id="themeinject">
     <center>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">The Impact</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <span>
+                  <h3 style="color: #333333;">169</h3>
+                  <p style="color: gray;">Targets</p>
+                  </span>
+                  <span>
+                    <h3 style="color: #333333;">3515</h3>
+                    <p style="color: gray;">Events</p>
+                </span>
+                    <span>
+                        <h3 style="color: #333333;">1326</h3>
+                        <p style="color: gray;">Publications</p>
+                    </span>
+                    <span>
+                        <h3 style="color: #333333;">6567</h3>
+                        <p style="color: gray;">Actions</p>
+                    </span>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
     <h1 class="blink">Sustainable Development Goals in 2030</h1>
     <br>
+    <span>
+    <button class="btn btn-info"><p>Prev</p></button>
+    <button class="btn btn-info"><p>Next</p></button>
+    </span>
     <br>
-    <img class="rotate" src="https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/08/E_SDG_logo_without_UN_emblem_square_RGB-600x355.png">
+    <br>
+    <span>
+    <img onclick="show_info()" class="rotate" style="height: 300px;" src="https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/08/E_SDG_logo_without_UN_emblem_square_RGB-600x355.png">
+    </span>
     <br>
     <br>
     <p class="fly">The 2030 Agenda for Sustainable Development, adopted by all United Nations Member States in 2015, provides a shared blueprint for peace and prosperity for people and the planet, now and into the future. At its heart are the 17 Sustainable Development Goals (SDGs), which are an urgent call for action by all countries - developed and developing - in a global partnership. They recognize that ending poverty and other deprivations must go hand-in-hand with strategies that improve health and education, reduce inequality, and spur economic growth – all while tackling climate change and working to preserve our oceans and forests.</p>
